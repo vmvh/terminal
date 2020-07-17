@@ -1,0 +1,35 @@
+
+comando -argumento
+
+COMANDOS:
+date = fecha
+echo = para mostrar msj en pantalla
+man = manual eje: man date
+
+UTILIDADES DE COMANDO
+2letras + tab (2veces) = comados con esas letras disponibles en el sistema
+techa flecha hacia arriba = repite los comandos ya escritos
+CONTROL + SHIRF + R = comandos escritos con anterioridad
+history: todos los comandos escritos
+
+
+ATAJOS EN COMANDOS DE TERMINAL
+ls : Lista los archivos que se encuentran en el directorio sobre el que estamos trabajando.
+ls -a : Lista todos los archivos incluyendo aquellos que se han definido como ocultos.
+ls -t : Ordena los archivos por fecha de modificación:
+ls -x : Ordena elementos primero por nombre y después por extensión
+
+. = apunta a directorio actual
+.. = apunta directorio padre
+pwd = me inica en que directorio estoy parado
+cd = para cambiar de directorio
+cd + parametro = me cambia al directorio indicado
+cd ~ = me lleva al home
+cd - = me lleva al ultimo directorio visitado
+    cp [archivo que se va a copiar] [directorio hacia el que se va a mover] COMANDOS
+mkdir (nombre) = crea un nuevo directorio
+cp: copiar un archivo hacia un directorio.
+rm (nombre.ext) = borra archivo
+mv : mover un archivo, cambiar su ubicación. La sintaxis es así:
+    mv [ruta del archivo] [directorio hacia el que se va a mover]
+rmdir (dir/) = borrar directorio vacio

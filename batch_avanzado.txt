@@ -1,0 +1,11 @@
+EJEMPLO PARA COPIAR DESDE EL ENCABEZADO HASTA LA LINEA INDICADA:
+ $ head -n 15 31_contrasena.py > parte1.txt
+
+EJEMPLO PARA COPIAR DESDE EL FINAL HASTA LA LINEA INDICADA
+ $ tail -n 12 31_contrasena.py > parte2.txt
+
+EJEMPLO PARA INSERTAR LA FECHA:
+ $ date >> parte2.txt
+
+EJEMPLO PARA CONTAR LAS LINEAS DE UN ARCHIVO:
+ $ cat 31_contrasena.py | wc -l

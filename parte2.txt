@@ -1,0 +1,12 @@
+    contrasena = "".join(contrasena)
+    return contrasena
+    
+
+
+def run():
+    contrasena = generar_contrasena()
+    print('Your new password ar: ' + contrasena)
+
+
+if __name__ == '__main__':
+    run()jue jul 16 22:07:44 CDT 2020
