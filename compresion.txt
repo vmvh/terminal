@@ -1,0 +1,36 @@
+Comprensión de Archivos
+
+Los archivos en una transmisión de datos pueden perderse para esto lo comprimimos haciendo uso del comando gzip. Un archivo comprimido no 
+podrá utilizarse como en clases pasadas pero para el envío y almacenamiento es ideal. . Ejemplo:
+
+    Para ver el tamaño del archivo a comprimir es: ls nombre_archivo.ext -lh 
+    Para comprimir: gzip nombre_archivo.ext 
+    Para verificar la extensión del archivo: ls nombre_archivo* 
+    Para verificar la compresión: ls nombre_archivo.ext.gz -lh
+    Para descomprimirlo: gzip -d nombre_archivo.ext.gz
+
+Combinación de Archivos
+
+Si quisiéramos enviar un grupo de archivos y no solo uno. Utilizaremos la herramienta tar solamente para agrupar solamente y para agrupar y 
+comprimir utilizaremos el tar csf . Ejemplo:
+
+    [tar] [cf (create file, este creará unnuevo archivo donde combinará los otros)] [backup.tar (Luego nombre de este archivo creado)][backup/ 
+    (aquí todos los archivos que están dentro del dir. backup)]*
+    $ tar cf directorio.tar directorio/*
+
+    Para ver el contenido de un directorio:
+    $ ls directorio/ -l
+
+    Para ver el contenido de TAR es: **[tar] [tf (es un parametro) backup.tar]
+    $ tar tf directorio.tar
+
+    Para desagrupar el archivo:
+    $ tar xf directorio.tar
+
+    Para agrupar y comprimir: [tar] [czf (Crea un archivo comprimido usando internamente la utilidad del gzip )] [backup.tgz] [backup/*]
+    $ tar czf directorio.tgz directorio/*
+
+    Para volver a recuperar los archivos: [tar] [xzf] [backup.tgz]
+    $ tar xzf directorio.tgz
+
+Nota: Hay que recordar que al mover el archivo a otra carpeta. este se mantendrá comprimido. para usarlo hay que descomprimir.
